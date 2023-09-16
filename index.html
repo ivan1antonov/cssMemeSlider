@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>css Meme Slider</title>
 </head>
 <body>
-  
+  <main class="main">
+    <div class="container">
+      <div class="slider">
+        <img class="slider-img" src="images/mommy.jpg" alt="meme1">
+        <img class="slider-img" src="images/caps.jpg" alt="meme2">
+        <img class="slider-img" src="images/eanglish.jpg" alt="meme3">
+        <img class="slider-img" src="images/hand.jpg" alt="meme4">
+      </div>
+      <div class="dots-list">
+        <form class="dots-list__pagination">
+          <label for="meme1">
+            <input class="dots-list__input dots-list__meme1" type="radio" checked>
+            <span class="dots-list__item"></span>
+          </label>
+          <label for="meme2">
+            <input class="dots-list__input dots-list__meme2" type="radio">
+            <span class="dots-list__item"></span>
+          </label>
+          <label for="meme3">
+            <input class="dots-list__input dots-list__meme3" type="radio">
+            <span class="dots-list__item"></span>
+          </label>
+          <label for="meme4">
+            <input class="dots-list__input dots-list__meme4" type="radio">
+            <span class="dots-list__item"></span>
+          </label>
+        </form>
+      </div>
+      <div class="slider-text">
+        <div class="slider-text__wramper">
+          <p class="slider-text__item">What worries you? I am a mother of three children, I just came to lie down.</p>
+          <p class="slider-text__item">When you didn't look at the table and brought a cup of tea to your desk</p>
+          <p class="slider-text__item">Trying to find js solutions without knowing English</p>
+          <p class="slider-text__item">when your grandma finds out you're a fan of Marvel</p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

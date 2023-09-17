@@ -9,11 +9,6 @@ body {
   padding: 2em;
   background-color: #000;
 }
-.nav__input{
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
 .slider{
   display: flex;
   width: 60em;
@@ -31,29 +26,44 @@ body {
   text-align: end;
   margin-right: 3em;
 }
+.dots-list__input{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
 .dots-list__item{
   display: inline-block;
   height: 0.9em;
   width: 0.9em;
-  border: 0.1em solid #5a74bd;
+  border: 0.2em solid #5a74bd;
   border-radius: 50%;
   background-color: #5a74bd;
+
+}
+.dots-list__input:checked ~ .dots-list__item{
+  background-color: transparent;
+  border-color: #fff;
+}
+.dots-list__label{
+  padding: 0.3em;
   cursor: pointer;
 }
 .dots-list__item:hover{
   background-color: #fff;
-  border: 0.1em solid #fff;
+  border: 0.2em solid #fff;
 }
 .dots-list__label + .dots-list__label{
-  margin-left: 0.5em;
+  margin-left: 0.2em;
 }
 .slider-text{
   display: flex;
+  margin-top: -1em;
 }
 .slider-text__item{
   font-size: 1.2em;
-  min-width: 80%;
-  margin: 0 20% 0 2em;
+  min-width: 60%;
+  margin: 0 40% 0 2em;
 }
+/*checked slider*/
 
-  
+/* animation slider */
